@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:dev_test/dev_test.dart';
-import 'package:future_provider_api_sample/data/postal_code.dart';
+import 'package:future_provider_api_sample/model/postal_code.dart';
 
 void main() {
   //https://madefor.github.io/postal-code-api/api/v1/100/0014.json

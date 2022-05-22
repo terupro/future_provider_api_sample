@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:future_provider_api_sample/data/postal_code.dart';
+import 'package:future_provider_api_sample/model/postal_code.dart';
 import 'package:http/http.dart' as http;
 
 // TextFieldに入力される値
@@ -23,5 +23,6 @@ final apiProvider = FutureProvider((ref) async {
     throw Exception('No postal code: $postalCode');
   }
   var jsonData = json.decode(response.body);
+
   return PostalCode.fromJson(jsonData);
 });
